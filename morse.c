@@ -133,7 +133,8 @@ static void table(void)
 
 	/* print body */
 	morse_codes();
-/* print footer */
+
+	/* print footer */
 	printf("|---------------|\n");
 
 #	undef code
