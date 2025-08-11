@@ -1,0 +1,49 @@
+.Dd $Mdocdate$
+.Dt morse 1
+.Os
+.
+.Sh NAME
+.Nm morse
+.Nd simple morse code encoder/decoder
+.
+.Sh SYNOPSIS
+.Nm
+.Op Fl h
+.Op Fl e
+.Op Fl d
+.Nm string
+.
+.Sh DESCRYPTION
+The
+.Nm 
+is morse code encoder and decoder.
+.Pp
+.Bl -tag -width Ds
+.It Fl h
+display usage.
+.It Fl e
+enable encoder mode.
+.It Fl d
+enable decoder mode.
+.El
+.
+.Sh EXAMPLES
+.Bd -literal -offset indent
+$ morse "Hello, world!"
+ .... . .-.. .-.. ---  / .-- --- .-. .-.. -..
+$ morse -d ".... . .-.. .-.. ---  / .-- --- .-. .-.. -.."
+hello world
+.Ed
+.
+.Sh EXIT STATUS
+.Ex -std
+.
+.Sh STANDARTS
+The
+.Nm
+utility is compliant with the
+.St -p1003.1-2008
+specification.
+.
+.Sh AUTHORS
+.An gimura Aq gimura0001@gmail.com

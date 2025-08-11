@@ -1,0 +1,35 @@
+morse(1)		    General Commands Manual		      morse(1)
+
+NAME
+     morse – simple morse code encoder/decoder
+
+SYNOPSIS
+     morse [-h] [-e] [-d]
+     string
+
+DESCRYPTION
+     The morse is morse code encoder and decoder.
+
+     -h	     display usage.
+
+     -e	     enable encoder mode.
+
+     -d	     enable decoder mode.
+
+EXAMPLES
+	   $ morse "Hello, world!"
+	    .... . .-.. .-.. ---  / .-- --- .-. .-.. -..
+	   $ morse -d ".... . .-.. .-.. ---  / .-- --- .-. .-.. -.."
+	   hello world
+
+EXIT STATUS
+     The morse utility exits 0 on success, and >0 if an error occurs.
+
+STANDARTS
+     The morse utility is compliant with the IEEE Std 1003.1-2008 (“POSIX.1”)
+     specification.
+
+AUTHORS
+     gimura ⟨gimura0001@gmail.com⟩
+
+Nixpkgs				August 11, 2025			       Nixpkgs
