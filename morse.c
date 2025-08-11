@@ -106,6 +106,9 @@ static void decode(char* text)
 
 #		undef code
 	}
+
+	/* put new line */
+	putc('\n', stdout);
 }
 
 /* execute encoding or decoding using current mode */
